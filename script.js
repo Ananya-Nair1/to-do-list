@@ -21,10 +21,10 @@ function addTask(){
 
 listcontainer.addEventListener("click",function(e){
     if(e.target.tagName === "LI"){
-        e.target.classlist.toggle("checked");
+        e.target.classList.toggle("checked");
         saveData();
     }
-    else if(e.target.tagName === "Span"){
+    else if(e.target.tagName === "SPAN"){
         e.target.parentElement.remove();
     }
 
